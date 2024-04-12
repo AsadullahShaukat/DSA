@@ -1,4 +1,3 @@
-package dataStructures;
 
 public class Array {
 	private int[] arr;
