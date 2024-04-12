@@ -21,7 +21,13 @@ public class Array {
 
 	public void insert(int num) {
 		arr[last++] = num;
-		System.out.println(last);
+		if (last == arr.length) { // size increment of the array
+			int[] temp = new int[last + 10];
+			for (int i = 0; i < last; i++) {
+				temp[i] = arr[i];
+			}
+			arr = temp;
+		}
 	}
 
 	public int remove() {
